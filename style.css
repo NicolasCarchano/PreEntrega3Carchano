@@ -29,7 +29,9 @@
 }
 
 .imagen {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 80px;
   width: 80px;
 }
@@ -80,6 +82,13 @@ main {
   background-color: antiquewhite;
 }
 
+.imagenprincipal {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*footer inicia*/
 footer {
   padding: 10px 0;
@@ -89,6 +98,10 @@ footer {
 .social {
   text-align: center;
   color: #234;
+}
+
+.h4 {
+  text-align: justify;
 }
 
 .social a {
@@ -111,20 +124,30 @@ footer {
 
 /*footer fin*/
 .card {
-  padding: 0px 30px 30px 40px;
+  padding: 0px 30px 30px 150px;
   text-align: center;
   display: inline-block;
 }
 
 .card-img-top {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 /*codigo para dispositivos moviles*/
 /*header para movil*/
 @media only screen and (min-width: 320px) and (max-width: 937px) {
   .header {
+    width: 100%;
     height: 80px;
   }
   .logo, .boton {
@@ -156,17 +179,20 @@ footer {
   }
 }
 main {
+  padding-top: 120px;
+  height: 100%;
+  width: 100%;
   background-color: antiquewhite;
-  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  padding: 0px 30px 30px 20px;
+  text-align: center;
+  display: inline-block;
 }
 
 /*header para movil fin*/
 /*para celular*/
-/* .card{
-
-    text-align: center;
-    display: inline-block;
-}
- */
 
 /*# sourceMappingURL=style.css.map */
